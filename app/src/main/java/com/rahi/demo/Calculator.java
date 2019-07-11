@@ -1,5 +1,6 @@
 package com.rahi.demo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +10,7 @@ import android.widget.TextView;
 
 public class Calculator extends AppCompatActivity {
 
-    Button btn1,btn2,btn3,btn4,btn5;
+    Button btn1,btn2,btn3,btn4,btn5,btn6;
     EditText edt1,edt2;
     TextView txt1;
     double sum;
@@ -18,6 +19,7 @@ public class Calculator extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
 
+        btn6=findViewById(R.id.btn6);
         btn1=findViewById(R.id.btn_add);
         btn2=findViewById(R.id.btn_sub);
         btn3=findViewById(R.id.btn_mul);
@@ -75,6 +77,15 @@ public class Calculator extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     txt1.setText(String.valueOf(sum));
+                }
+            });
+
+            btn6.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i=new Intent(Calculator.this,Intent_Transaction.class);
+                    startActivity(i);
+
                 }
             });
 
