@@ -16,7 +16,7 @@
         android:layout_marginStart="140dp"
         android:layout_marginBottom="329dp"
         android:background="@color/colorAccent"
-        android:text="Click Me"
+        android:text="Next"
         android:textColor="#FFFFFF"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,45 +37,8 @@
         android:inputType="text"
         android:hint="number" />
 
-    <EditText
-        android:id="@+id/et_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="127dp"
-        android:ems="10"
-        android:hint="number"
-        android:inputType="number" />
-
-    <TextView
-        android:id="@+id/tv_val"
-        android:layout_width="100dp"
-        android:layout_height="70dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="168dp"
-        android:layout_marginBottom="190dp"
-
-        android:text="Ans:"
-        android:textSize="20dp" />
-
-    <Button
-        android:id="@+id/btn_calc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
 
 
-        android:layout_marginEnd="94dp"
-        android:layout_marginBottom="124dp"
-        android:background="@color/colorAccent"
-        android:text="calculator"
-        android:textColor="#ffffff"
-        android:textSize="30dp" />
+
 
 </RelativeLayout>
