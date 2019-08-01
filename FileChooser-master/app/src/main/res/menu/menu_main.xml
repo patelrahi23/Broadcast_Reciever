@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="friendlyitsolution.com.filechooser.MainActivity">
+    <item
+        android:id="@+id/sc"
+        android:orderInCategory="100"
+        android:title="Song"
+        android:icon="@drawable/icon_audio"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ic"
+        android:orderInCategory="100"
+        android:title="Image"
+        app:showAsAction="never" />
+</menu>
