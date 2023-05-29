@@ -29,10 +29,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        b1=findViewById(R.id.btnplay);
-        b2=findViewById(R.id.btnpause);
-        b3=findViewById(R.id.btnstop);
-        img = findViewById(R.id.img);
         fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (requestCode == 2 && resultCode == RESULT_OK && data.getData() != null) {
 
             Uri u = data.getData();
-            mp.create(this,u);
+            MediaPlayer.create(this,u);
             mp.start();
             b1.setOnClickListener(new View.OnClickListener() {
                 @Override
